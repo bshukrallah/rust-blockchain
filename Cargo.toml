@@ -7,4 +7,9 @@ edition = "2021"
 name = "blockchainlib"
 path = "src/lib.rs"
 
+[[bin]]
+name = "blockchain"
+path = "src/main.rs"
+
 [dependencies]
+hex = "0.4"

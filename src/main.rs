@@ -1,9 +1,11 @@
 use blockchainlib::*;
 
-fn main() {
-    println!("Hello, world!");
 
-    let time = current_time();
-    println!("Time: {}", time);
+fn main() {
+
+    let block = Block::new(0, current_time(), vec![0; 32], 0, "Genesis Block".to_owned());
+
+
+    println!("{:?}", &block);
 
 }
